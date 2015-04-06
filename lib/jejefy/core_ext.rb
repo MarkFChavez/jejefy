@@ -1,1 +1,1 @@
-require "core_ext/string"
+require "jejefy/core_ext/string"
