@@ -4,5 +4,5 @@ require "jejefy/configuration"
 
 module Jejefy
   # Your code goes here...
-  JEJEMON_ALPHABET = ["4", "b", "c", "D", "3", "f", "6", "h", "1", "j", "k", "7", "m", "N", "0", "p", "Q", "r", "5", "t", "u", "V", "w", "x", "Y", "z"]
+  VOWELS = %w{a e i o u A E I O U}
 end
