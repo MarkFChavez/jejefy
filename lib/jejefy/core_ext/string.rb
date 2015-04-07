@@ -1,12 +1,22 @@
 class String
   def jejefy
-    size = self.size
-    rslt = []
+    str = self.gsub /a/, "4"
+    str = str.gsub /e/, "3"
+    str = str.gsub /o/, "0"
 
-    size.times do
-      rslt << Jejefy::JEJEMON_ALPHABET.sample 
+    str
+  end
+
+  def vowel?
+    self.split("").map do |c|
+      c.send(:chck_vwl)
     end
+  end
 
-    rslt.join("")
+  private
+
+  def chck_vwl
+    vowels = %w{a e i o u A E I O U}
+    vowels.include? self
   end
 end
